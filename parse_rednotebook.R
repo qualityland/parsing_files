@@ -19,4 +19,6 @@ for (file_name in file_names) {
 }
 
 all_entries
-write.csv(all_entries, file = paste0(file_path, "rednotebook.csv"))
+write.csv(all_entries,
+          file = paste0(file_path, "rednotebook.csv"),
+          row.names = FALSE)
